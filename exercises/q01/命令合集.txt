@@ -1,0 +1,32 @@
+# 创建q01目录并进入
+mkdir -p q01/input/docs q01/input/tmp
+cd q01
+# 创建note one.txt .secret.txt empty.txt
+echo -e "alpha\nbeta" > "input/docs/notes one.txt"
+echo "hidden" > input/docs/.secret.txt
+touch q01/input/tmp/empty.txt
+# 创建日志文件
+cat > input/run.log << 'EOF'
+[2026-08-26 09:00:00] INFO: service initialized
+[2026-08-26 09:00:01] INFO: input directory ready
+EOF
+# 显示绝对路径，所有（含隐藏）文件
+pwd
+ls -laR input
+
+# 创建目标目录
+mkdir -p "work/$STUDENT_ID"
+
+# 进入input目录，复制所有txt文件并保留相对目录结构
+cd input
+find . -type f -name "*.txt" -exec cp --parents {} "../work/$STUDENT_ID/" \;
+# 返回 q01 根目录
+cd ..
+
+# 设置权限
+find "work/$STUDENT_ID" -type d -exec chmod 750 {} \;
+find "work/$STUDENT_ID" -type f -exec chmod 640 {} \;
+# 生成 inventory
+cd "work/$STUDENT_ID"
+# 输出格式：相对路径 字节数（去掉 ./ 前缀）
+find . -type f -printf "%p %s\n" | sed 's|^\./||' > inventory.txt
