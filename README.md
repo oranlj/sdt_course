@@ -5,8 +5,7 @@
 学生：居里 25060021025 OUC
 
 ## 目录结构
-- `exercises/code`：课堂练习涉及代码/指令
-- `exercises/work`：课堂练习工作文件夹
+- `exercises/`：课堂练习涉及代码/指令
 - `assignments/`：课后作业
 - `lab-reports/`：实验报告（pdf）
 
