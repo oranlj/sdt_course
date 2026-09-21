@@ -1,0 +1,3 @@
+Python syntax check: PASS (python -m py_compile app.py)
+Compose file inspection: PASS
+Container runtime test: NOT RUN because Docker is not installed on this Windows machine.

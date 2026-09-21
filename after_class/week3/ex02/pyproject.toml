@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "greetlock-25060021025"
+version = "0.1.0"
+description = "A minimal package for inspecting a lock file"
+requires-python = ">=3.10"
+
+[project.scripts]
+greet-lock = "greetlock.cli:main"

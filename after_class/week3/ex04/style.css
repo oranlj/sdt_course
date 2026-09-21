@@ -1,0 +1,37 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  place-items: center;
+  background: #eef3f8;
+  color: #172033;
+}
+
+main {
+  width: min(42rem, calc(100% - 3rem));
+  padding: 3rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 1rem 3rem rgb(33 53 85 / 15%);
+}
+
+.eyebrow {
+  color: #3867d6;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 0.4rem 0 1rem;
+  font-size: clamp(2rem, 7vw, 4rem);
+}
+
+a {
+  color: #2855b6;
+}

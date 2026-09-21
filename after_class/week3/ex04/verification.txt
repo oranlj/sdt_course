@@ -1,0 +1,3 @@
+HTML parser check: PASS
+Stylesheet existence check: PASS
+GitHub Pages publication: NOT RUN because publishing changes the external repository.
