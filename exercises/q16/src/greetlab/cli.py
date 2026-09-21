@@ -6,4 +6,4 @@ def main():
     a = p.parse_args()
     if not a.name.strip():
         raise SystemExit(2)
-    print(f"Hello, name")
+    print(f"Hello, {a.name}!")

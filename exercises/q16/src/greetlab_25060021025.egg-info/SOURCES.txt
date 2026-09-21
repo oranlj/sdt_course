@@ -6,3 +6,4 @@ src/greetlab_25060021025.egg-info/SOURCES.txt
 src/greetlab_25060021025.egg-info/dependency_links.txt
 src/greetlab_25060021025.egg-info/entry_points.txt
 src/greetlab_25060021025.egg-info/top_level.txt
+tests/test_cli.py
